@@ -36,7 +36,7 @@ const Login = () => {
   const handleOtpVerification = async () => {
     try {
       const otpResponse = await axios.post(
-        "http://localhost:3001/auth/verify-otp",
+        "https://weather-mail-backend.onrender.com/auth/verify-otp",
         {
           otp,
         }
