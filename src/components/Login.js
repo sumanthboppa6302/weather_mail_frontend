@@ -14,7 +14,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        `${process.env.backend_url}/auth/login`,
+        "https://weather-mail-backend.onrender.com/auth/login",
         {
           email,
           password,

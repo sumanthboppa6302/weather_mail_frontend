@@ -11,7 +11,7 @@ const RequestReset = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `${process.env.backend_url}/auth/request-reset`,
+        "https://weather-mail-backend.onrender.com/auth/request-reset",
         { email }
       );
       if (response.data.success) {

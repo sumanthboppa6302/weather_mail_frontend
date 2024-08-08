@@ -19,7 +19,7 @@ const ResetPassword = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `${process.env.backend_url}/auth/reset-password`,
+        "https://weather-mail-backend.onrender.com/auth/request-reset",
         {
           token,
           newPassword,

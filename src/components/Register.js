@@ -12,7 +12,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `${process.env.backend_url}/auth/register`,
+        "https://weather-mail-backend.onrender.com/auth/register",
         {
           email,
           password,
